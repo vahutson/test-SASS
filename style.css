@@ -25,26 +25,48 @@ header {
     padding-top: 11px;
     padding-bottom: 17px; }
     header .header .header__search {
-      width: 435px; }
+      position: relative;
+      width: 435px;
+      margin-top: 5px; }
+      header .header .header__search .header__search-icon {
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 2px;
+        left: 5px;
+        background: url("img/Search.png") center no-repeat; }
       header .header .header__search input {
         align-self: baseline;
         width: 100%;
         height: 34px;
+        padding-left: 38px;
+        color: white;
+        font-size: 15px;
         background-color: #73993d;
         border-style: none;
         border-radius: 5px; }
+        header .header .header__search input::placeholder {
+          color: white;
+          transition: 0.3s; }
+        header .header .header__search input:focus::placeholder {
+          color: transparent;
+          outline: none; }
     header .header .header__chat {
       width: 34px;
       height: 34px;
+      margin-top: 5px;
       background: url("img/Chat.png") center no-repeat; }
     header .header .header__bell {
       width: 34px;
       height: 34px;
+      margin-top: 5px;
       background: url("img/bell.png") center no-repeat; }
   header .header__user-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 5px;
     color: white; }
     header .header__user-info .header__user-photo {
       width: 32px;
@@ -143,6 +165,9 @@ main .services__wrapper {
     font-size: 14px;
     color: white;
     outline: none; }
+    main .services__wrapper .services__add-button:hover {
+      cursor: pointer;
+      outline: none; }
 main .services {
   border: 1px solid #e0e2e6;
   border-radius: 5px; }
@@ -152,18 +177,26 @@ main .services {
     border-radius: 5px; }
     main .services .services__row .services__item {
       padding: 15px 9px 20px 14px; }
+      main .services .services__row .services__item:hover {
+        cursor: pointer; }
       main .services .services__row .services__item .padIcon {
         width: 140px;
         height: 140px;
         padding: 34px;
         border: 1px solid #e0e2e6;
         border-radius: 5px; }
+        main .services .services__row .services__item .padIcon:hover {
+          background: #f4f7fb;
+          cursor: pointer; }
       main .services .services__row .services__item .services__title {
         width: 140px;
         margin: 17px auto 0 auto;
         color: #1c2534;
         font-size: 14px;
         text-align: center; }
+        main .services .services__row .services__item .services__title:hover {
+          color: #71973c;
+          cursor: pointer; }
 
 aside .people {
   border-bottom: 1px solid #e0e2e6; }
