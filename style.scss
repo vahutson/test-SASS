@@ -13,6 +13,11 @@
   text-decoration: none;
 }
 
+.content-width {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
 header {
   height: 68px;
   background: #87b448;
@@ -72,12 +77,13 @@ header {
 
 .main_wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .navigation {
   width: 212px;
-  margin-left: 15vh;
 
   nav {
 
@@ -185,7 +191,6 @@ header {
 }
 
 main {
-  width: 33.3%;
 
   .services__wrapper {
     display: flex;
@@ -194,7 +199,7 @@ main {
     padding-top: 12px;
     height: 62px;
 
-    .services__title {
+    .services__wrapper-title {
       color: #1c2534;
       font-size: 25px;
     }
@@ -210,4 +215,140 @@ main {
       outline: none;
     }
   }
+
+  .services {
+    border: 1px solid #e0e2e6;
+    border-radius: 5px;
+
+    .services__row {
+      display: flex;
+      justify-content: space-between;
+      border-radius: 5px;
+
+      .services__item {
+        padding: 15px 9px 20px 14px;
+
+        .padIcon {
+          width: 140px;
+          height: 140px;
+          padding: 34px;
+          border: 1px solid #e0e2e6;
+          border-radius: 5px;
+        }
+
+        .services__title {
+          width: 140px;
+          margin: 17px auto 0 auto;
+          color: #1c2534;
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+    }
+  }
 }
+
+aside {
+  .people {
+
+    border-bottom: 1px solid #e0e2e6;
+
+    .people__title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 50px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  .people__item {
+    margin-bottom: 20px;
+
+    .people__name {
+      margin-bottom: 10px;
+    }
+
+    .people__info {
+      display: flex;
+      justify-content: space-between;
+
+      .people__photo {
+        border-radius: 5px;
+      }
+
+      .people__text-content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 125px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+      }
+
+      .people__add-friend {
+        color: #1c2534;
+        font-size: 10px;
+      }
+    }
+  }
+  .advertisement {
+
+    .advertisement__image {
+      border: 1px solid #e0e2e6;
+    }
+    .advertisement__copyright {
+      display: block;
+      margin-top: 8px;
+    }
+  }
+
+  .products {
+
+    .products__title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 50px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .products__item {
+      margin-bottom: 20px;
+
+      .product__name {
+        margin-bottom: 10px;
+      }
+
+      .product__content {
+        display: flex;
+        justify-content: space-between;
+
+        .product__photo {
+          width: 80px;
+          height: 80px;
+          border-radius: 5px;
+
+          &.image01 {
+            background: url("img/product__01.jpg") center no-repeat;
+          }
+
+          &.image02 {
+            background: url("img/product__02.jpg") center no-repeat;
+          }
+        }
+
+        .product__text {
+          width: 125px;
+
+          p {
+            line-height: 1.12;
+          }
+        }
+      }
+    }
+  }
+}
+
+

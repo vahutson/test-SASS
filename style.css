@@ -9,6 +9,10 @@
   color: #1c2534;
   text-decoration: none; }
 
+.content-width {
+  max-width: 950px;
+  margin: 0 auto; }
+
 header {
   height: 68px;
   background: #87b448;
@@ -51,11 +55,12 @@ header {
 
 .main_wrapper {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto; }
 
 .navigation {
-  width: 212px;
-  margin-left: 15vh; }
+  width: 212px; }
   .navigation nav .navigation__item {
     width: 215px;
     height: 53px;
@@ -120,25 +125,104 @@ header {
   .tail .tail__privacy {
     margin-left: 25px; }
 
-main {
-  width: 33.3%; }
-  main .services__wrapper {
+main .services__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 12px;
+  height: 62px; }
+  main .services__wrapper .services__wrapper-title {
+    color: #1c2534;
+    font-size: 25px; }
+  main .services__wrapper .services__add-button {
+    width: 145px;
+    height: 30px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: #87b448;
+    font-size: 14px;
+    color: white;
+    outline: none; }
+main .services {
+  border: 1px solid #e0e2e6;
+  border-radius: 5px; }
+  main .services .services__row {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    padding-top: 12px;
-    height: 62px; }
-    main .services__wrapper .services__title {
+    border-radius: 5px; }
+    main .services .services__row .services__item {
+      padding: 15px 9px 20px 14px; }
+      main .services .services__row .services__item .padIcon {
+        width: 140px;
+        height: 140px;
+        padding: 34px;
+        border: 1px solid #e0e2e6;
+        border-radius: 5px; }
+      main .services .services__row .services__item .services__title {
+        width: 140px;
+        margin: 17px auto 0 auto;
+        color: #1c2534;
+        font-size: 14px;
+        text-align: center; }
+
+aside .people {
+  border-bottom: 1px solid #e0e2e6; }
+  aside .people .people__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+aside .people__item {
+  margin-bottom: 20px; }
+  aside .people__item .people__name {
+    margin-bottom: 10px; }
+  aside .people__item .people__info {
+    display: flex;
+    justify-content: space-between; }
+    aside .people__item .people__info .people__photo {
+      border-radius: 5px; }
+    aside .people__item .people__info .people__text-content {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 125px;
+      padding-left: 10px;
+      padding-bottom: 10px; }
+    aside .people__item .people__info .people__add-friend {
       color: #1c2534;
-      font-size: 25px; }
-    main .services__wrapper .services__add-button {
-      width: 145px;
-      height: 30px;
-      border-style: none;
-      border-radius: 5px;
-      background-color: #87b448;
-      font-size: 14px;
-      color: white;
-      outline: none; }
+      font-size: 10px; }
+aside .advertisement .advertisement__image {
+  border: 1px solid #e0e2e6; }
+aside .advertisement .advertisement__copyright {
+  display: block;
+  margin-top: 8px; }
+aside .products .products__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+aside .products .products__item {
+  margin-bottom: 20px; }
+  aside .products .products__item .product__name {
+    margin-bottom: 10px; }
+  aside .products .products__item .product__content {
+    display: flex;
+    justify-content: space-between; }
+    aside .products .products__item .product__content .product__photo {
+      width: 80px;
+      height: 80px;
+      border-radius: 5px; }
+      aside .products .products__item .product__content .product__photo.image01 {
+        background: url("img/product__01.jpg") center no-repeat; }
+      aside .products .products__item .product__content .product__photo.image02 {
+        background: url("img/product__02.jpg") center no-repeat; }
+    aside .products .products__item .product__content .product__text {
+      width: 125px; }
+      aside .products .products__item .product__content .product__text p {
+        line-height: 1.12; }
 
 /*# sourceMappingURL=style.css.map */
