@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
 
 </head>
 <body>
 <header>
     <div class="header">
-        <img src="" alt="" class="header__logo">
+        <img src="img/logo.png" alt="" class="header__logo">
         <div class="header__search">
             <span class="header__search-icon"></span>
             <input type="text">
@@ -16,22 +19,25 @@
         <div class="header__chat"></div>
         <div class="header__bell"></div>
         <div class="header__user-info">
-            <img src="" alt="" class="header__user-photo">
+            <div class="header__user-photo"></div>
             <p class="header__user-name">Maximillian Beekeeper</p>
         </div>
     </div>
 </header>
 
+<div class="main_wrapper">
 <div class="navigation">
     <nav>
-        <a href="#" class="navigation__item">Feed</a>
-        <a href="#" class="navigation__item">Ask a Colleague</a>
-        <a href="#" class="navigation__item">Companies</a>
-        <a href="#" class="navigation__item">Service Directory</a>
+        <ul>
+        <li class="navigation__item"><img src="img/Feed.png" alt="" class="nav-icon"><a href="#">Feed</a></li>
+        <li class="navigation__item"><img src="img/Ask.png" alt="" class="nav-icon"><a href="#">Ask a Colleague</a></li>
+        <li class="navigation__item"><img src="img/Companies.png" alt="" class="nav-icon"><a href="#">Companies</a></li>
+        <li class="navigation__item"><img src="img/Services.png" alt="" class="nav-icon"><a href="#">Service Directory</a></li>
+        </ul>
     </nav>
     <div class="advertisement">
         <p class="text__second-color">Advertisement</p>
-        <img src="" alt="" class="advertisement__image">
+        <img src="img/advertisement__one.jpg" alt="" class="advertisement__image">
         <a href="#" class="advertisement__copyright">Ads By Denteez.com</a>
     </div>
     <div class="companies">
@@ -40,25 +46,31 @@
             <a href="#" class="see-all">See All</a>
         </div>
         <div class="companies__item">
-            <img src="" alt="">
+            <div class="companies__image image01"></div>
+            <div class="companies__info">
             <h5 class="companies__item-name">Company Name</h5>
             <p class="text__second-color">Manufacturer</p>
             <p class="text__second-color">Belgrade, Serbia</p>
             <a class="companies__follow">Follow Now</a>
+            </div>
         </div>
         <div class="companies__item">
-            <img src="" alt="">
+            <div class="companies__image image02"></div>
+            <div class="companies__info">
             <h5 class="companies__item-name">Company Name</h5>
             <p class="text__second-color">Service Provider</p>
             <p class="text__second-color">New York, USA</p>
             <a class="companies__follow">Follow Now</a>
+            </div>
         </div>
         <div class="companies__item">
-            <img src="" alt="">
+            <div class="companies__image image03"></div>
+            <div class="companies__info">
             <h5 class="companies__item-name">Company Name</h5>
             <p class="text__second-color">Supplier</p>
             <p class="text__second-color">London, England</p>
             <a class="companies__follow">Follow Now</a>
+            </div>
         </div>
     </div>
     <div class="tail">
@@ -216,5 +228,6 @@
         </div>
     </div>
 </asside>
+</div>
 </body>
 </html>
