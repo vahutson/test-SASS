@@ -4,11 +4,14 @@
 }
 
 .text__second-color {
-  font-size: 15px;
+  font-size: 14px;
   color: #858e9c;
 }
 
 .see-all {
+  margin-top: 2px;
+  margin-right: -3px;
+  font-size: 14px;
   color: #1c2534;
   text-decoration: none;
 }
@@ -31,10 +34,15 @@ header {
     padding-top: 11px;
     padding-bottom: 17px;
 
+    .header__logo {
+      margin-left: 3px;
+    }
+
     .header__search {
       position: relative;
       width: 435px;
       margin-top: 5px;
+      margin-left: 20px;
 
       .header__search-icon {
         display: block;
@@ -42,7 +50,7 @@ header {
         width: 30px;
         height: 30px;
         top: 2px;
-        left: 5px;
+        left: 3px;
         background: url("img/Search.png") center no-repeat;
       }
 
@@ -50,7 +58,7 @@ header {
         align-self: baseline;
         width: 100%;
         height: 34px;
-        padding-left: 38px;
+        padding-left: 36px;
         color: white;
         font-size: 15px;
         background-color: #73993d;
@@ -75,7 +83,8 @@ header {
     .header__chat {
       width: 34px;
       height: 34px;
-      margin-top: 5px;
+      margin-top: 7px;
+      margin-left: 15px;
       background: url("img/Chat.png") center no-repeat;
     }
 
@@ -83,6 +92,7 @@ header {
       width: 34px;
       height: 34px;
       margin-top: 5px;
+      margin-right: 15px;
       background: url("img/bell.png") center no-repeat;
     }
   }
@@ -92,15 +102,20 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-top: 5px;
+    margin-right: 13px;
     color: white;
 
     .header__user-photo {
       width: 32px;
       height: 32px;
-      margin-right: 5px;
+      margin-right: 11px;
       background: url("img/user__photo.jpg") center no-repeat;
       border-radius: 5px;
+    }
 
+    .header__user-name {
+      font-size: 16px;
+      margin-right: -6px;
     }
   }
 
@@ -117,44 +132,63 @@ header {
   width: 212px;
 
   nav {
+    ul {
+      display: flex;
+      flex-direction: column;
+      height: 204px;
 
-    .navigation__item {
-      width: 215px;
-      height: 53px;
-      padding-top: 13px;
-      padding-bottom: 13px;
-      border-bottom: 1px solid #e0e2e6;
-      font-size: 18px;
+      .navigation__item {
+        position: relative;
+        width: 215px;
+        height: 52px;
 
-      a {
-        padding-left: 27px;
-        color: #59606b;
-        text-decoration: none;
-        vertical-align: text-top;
 
+        border-bottom: 1px solid #e0e2e6;
+
+        a {
+          position: absolute;
+          top: 17px;
+          padding-left: 26px;
+          color: #59606b;
+          text-decoration: none;
+          vertical-align: text-top;
+          font-size: 16px;
+
+        }
+
+        .nav-icon {
+          width: 24px;
+          height: 24px;
+          margin-top: 14px;
+          margin-left: 3px;
+        }
       }
     }
   }
 }
 
 .advertisement {
-  padding-bottom: 20px;
+  padding-left: 3px;
+  padding-bottom: 17px;
   border-bottom: 1px solid #e0e2e6;
 
   .text__second-color {
-    margin-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 19px;
+    font-size: 14px;
+    padding-left: 1px;
+    padding-bottom: 17px;
   }
 
   .advertisement__copyright {
     color: #d3d3d3;
-    font-size: 12px;
+    font-size: 10px;
     text-decoration: none;
 
   }
 }
 
 .companies {
+  padding-left: 3px;
   border-bottom: 1px solid #e0e2e6;
 
   .companies__title {
@@ -167,6 +201,10 @@ header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+
+    .companies__item-name {
+      margin-top: -2px;
+    }
 
     .companies__image {
       width: 80px;
@@ -190,14 +228,18 @@ header {
 
     }
 
+
+
     .companies__info {
       display: flex;
       justify-content: space-between;
       flex-direction: column;
-      padding-bottom: 10px;
+      padding-right: 7px;
+      padding-bottom: 8px;
 
       .companies__follow {
-        font-size: 10px;
+        font-size: 12px;
+        margin-left: 1px;
       }
     }
   }
@@ -205,19 +247,20 @@ header {
 
 .tail {
   margin-top: 17px;
+  margin-left: 3px;
 
   a {
-    font-size: 12px;
+    font-size: 11px;
     color: #b7bfcd;
   }
 
   .tail__copyright {
     display: block;
-    margin-bottom: 19px;
+    margin-bottom: 13px;
   }
 
   .tail__privacy {
-    margin-left: 25px;
+    margin-left: 22px;
   }
 }
 
@@ -226,18 +269,19 @@ main {
   .services__wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    padding-top: 12px;
+    padding-top: 13px;
     height: 62px;
 
     .services__wrapper-title {
+      padding-left: 5px;
       color: #1c2534;
-      font-size: 25px;
+      font-size: 30px;
     }
 
     .services__add-button {
       width: 145px;
       height: 30px;
+      margin-top: -1px;
       border-style: none;
       border-radius: 5px;
       background-color: #87b448;
@@ -260,6 +304,7 @@ main {
       display: flex;
       justify-content: space-between;
       border-radius: 5px;
+      padding: 15px 9px 20px 12px;
 
       .services__item {
         padding: 15px 9px 20px 14px;
@@ -267,8 +312,6 @@ main {
         &:hover {
           cursor: pointer;
         }
-
-
 
         .padIcon {
           width: 140px;
@@ -295,7 +338,6 @@ main {
             cursor: pointer;
           }
         }
-
 
       }
     }
