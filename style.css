@@ -7,7 +7,6 @@
 
 .see-all {
   margin-top: 2px;
-  margin-right: -3px;
   font-size: 14px;
   color: #1c2534;
   text-decoration: none; }
@@ -51,7 +50,8 @@ header {
         font-size: 15px;
         background-color: #73993d;
         border-style: none;
-        border-radius: 5px; }
+        border-radius: 5px;
+        outline: none; }
         header .header .header__search input::placeholder {
           color: white;
           transition: 0.3s; }
@@ -89,9 +89,7 @@ header {
 
 .main_wrapper {
   display: flex;
-  justify-content: space-around;
-  width: 80%;
-  margin: 0 auto; }
+  justify-content: space-between; }
 
 .navigation {
   width: 212px; }
@@ -178,117 +176,125 @@ header {
   .tail .tail__privacy {
     margin-left: 22px; }
 
-main .services__wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 13px;
-  height: 62px; }
-  main .services__wrapper .services__wrapper-title {
-    padding-left: 5px;
-    color: #1c2534;
-    font-size: 30px; }
-  main .services__wrapper .services__add-button {
-    width: 145px;
-    height: 30px;
-    margin-top: -1px;
-    border-style: none;
-    border-radius: 5px;
-    background-color: #87b448;
-    font-size: 14px;
-    color: white;
-    outline: none; }
-    main .services__wrapper .services__add-button:hover {
-      cursor: pointer;
-      outline: none; }
-main .services {
-  border: 1px solid #e0e2e6;
-  border-radius: 5px; }
-  main .services .services__row {
+main {
+  margin-left: 20px;
+  margin-right: 20px; }
+  main .services__wrapper {
     display: flex;
     justify-content: space-between;
+    padding-top: 13px;
+    padding-bottom: 20px; }
+    main .services__wrapper .services__wrapper-title {
+      padding-left: 5px;
+      color: #1c2534;
+      font-size: 30px; }
+    main .services__wrapper .services__add-button {
+      width: 145px;
+      border-style: none;
+      border-radius: 5px;
+      background-color: #87b448;
+      font-size: 14px;
+      color: white;
+      outline: none; }
+      main .services__wrapper .services__add-button:hover {
+        cursor: pointer;
+        outline: none; }
+  main .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid #e0e2e6;
     border-radius: 5px;
-    padding: 15px 9px 20px 12px; }
-    main .services .services__row .services__item {
-      padding: 15px 9px 20px 14px; }
-      main .services .services__row .services__item:hover {
+    padding: 4px; }
+    main .services .services__item {
+      width: 140px;
+      margin: 9px; }
+      main .services .services__item:hover {
         cursor: pointer; }
-      main .services .services__row .services__item .padIcon {
+        main .services .services__item:hover .services__title {
+          color: #71973c; }
+      main .services .services__item .padIcon {
         width: 140px;
         height: 140px;
         padding: 34px;
-        border: 1px solid #e0e2e6;
-        border-radius: 5px; }
-        main .services .services__row .services__item .padIcon:hover {
+        border: 1px solid #e0e2e6; }
+        main .services .services__item .padIcon:hover {
           background: #f4f7fb;
           cursor: pointer; }
-      main .services .services__row .services__item .services__title {
-        width: 140px;
+      main .services .services__item .services__title {
+        max-width: 80%;
         margin: 17px auto 0 auto;
         color: #1c2534;
-        font-size: 14px;
+        font-size: 13px;
         text-align: center; }
-        main .services .services__row .services__item .services__title:hover {
-          color: #71973c;
-          cursor: pointer; }
 
-aside .people {
-  border-bottom: 1px solid #e0e2e6; }
-  aside .people .people__title {
+aside {
+  width: 213px;
+  padding-right: 5px; }
+  aside .people {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e2e6; }
+    aside .people .people__title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 45px;
+      padding-top: 5px;
+      margin-bottom: 3px; }
+  aside .people__item {
+    margin-bottom: 19px; }
+    aside .people__item .people__name {
+      margin-bottom: 7px; }
+    aside .people__item .people__info {
+      display: flex;
+      justify-content: space-between; }
+      aside .people__item .people__info .people__photo {
+        border-radius: 5px; }
+      aside .people__item .people__info .people__text-content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 125px;
+        padding-left: 3px;
+        padding-bottom: 10px;
+        line-height: 1.2; }
+      aside .people__item .people__info .people__add-friend {
+        color: #1c2534;
+        font-size: 12px;
+        line-height: 0.9; }
+  aside .advertisement {
+    margin-top: 42px;
+    padding-left: 0; }
+    aside .advertisement .advertisement__image {
+      border: 1px solid #e0e2e6; }
+    aside .advertisement .advertisement__copyright {
+      display: block;
+      margin-top: 4px; }
+  aside .products .products__title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px; }
-aside .people__item {
-  margin-bottom: 20px; }
-  aside .people__item .people__name {
-    margin-bottom: 10px; }
-  aside .people__item .people__info {
-    display: flex;
-    justify-content: space-between; }
-    aside .people__item .people__info .people__photo {
-      border-radius: 5px; }
-    aside .people__item .people__info .people__text-content {
+    height: 40px; }
+  aside .products .products__item {
+    margin-top: 2px;
+    margin-bottom: 15px; }
+    aside .products .products__item .product__name {
+      margin-bottom: 8px; }
+    aside .products .products__item .product__content {
       display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-      width: 125px;
-      padding-left: 10px;
-      padding-bottom: 10px; }
-    aside .people__item .people__info .people__add-friend {
-      color: #1c2534;
-      font-size: 10px; }
-aside .advertisement .advertisement__image {
-  border: 1px solid #e0e2e6; }
-aside .advertisement .advertisement__copyright {
-  display: block;
-  margin-top: 8px; }
-aside .products .products__title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 50px;
-  padding-top: 20px;
-  padding-bottom: 20px; }
-aside .products .products__item {
-  margin-bottom: 20px; }
-  aside .products .products__item .product__name {
-    margin-bottom: 10px; }
-  aside .products .products__item .product__content {
-    display: flex;
-    justify-content: space-between; }
-    aside .products .products__item .product__content .product__photo {
-      width: 80px;
-      height: 80px;
-      border-radius: 5px; }
-      aside .products .products__item .product__content .product__photo.image01 {
-        background: url("img/product__01.jpg") center no-repeat; }
-      aside .products .products__item .product__content .product__photo.image02 {
-        background: url("img/product__02.jpg") center no-repeat; }
-    aside .products .products__item .product__content .product__text {
-      width: 125px; }
-      aside .products .products__item .product__content .product__text p {
-        line-height: 1.12; }
+      justify-content: space-between; }
+      aside .products .products__item .product__content .product__photo {
+        width: 80px;
+        height: 80px;
+        border-radius: 5px; }
+        aside .products .products__item .product__content .product__photo.image01 {
+          background: url("img/product__01.jpg") center no-repeat; }
+        aside .products .products__item .product__content .product__photo.image02 {
+          background: url("img/product__02.jpg") center no-repeat; }
+      aside .products .products__item .product__content .product__text {
+        width: 125px;
+        padding-left: 7px; }
+        aside .products .products__item .product__content .product__text p {
+          line-height: 1.12; }
 
 /*# sourceMappingURL=style.css.map */

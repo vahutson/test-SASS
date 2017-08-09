@@ -1,0 +1,19 @@
+{
+  "name": "denteez",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vahutson/test-SASS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vahutson/test-SASS/issues"
+  },
+  "homepage": "https://github.com/vahutson/test-SASS#readme"
+}
