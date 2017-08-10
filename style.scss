@@ -68,16 +68,13 @@ header {
         &::placeholder {
           color: white;
           transition: 0.3s;
-
         }
 
         &:focus::placeholder {
           color: transparent;
           outline: none;
         }
-
       }
-
     }
 
     .header__chat {
@@ -116,9 +113,11 @@ header {
     .header__user-name {
       font-size: 16px;
       margin-right: -6px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
-
 }
 
 .main_wrapper {
@@ -139,7 +138,6 @@ header {
         position: relative;
         width: 215px;
         height: 52px;
-
         border-bottom: 1px solid #e0e2e6;
 
         a {
@@ -180,7 +178,6 @@ header {
     color: #d3d3d3;
     font-size: 10px;
     text-decoration: none;
-
   }
 }
 
@@ -207,22 +204,18 @@ header {
       width: 80px;
       height: 80px;
       border-radius: 5px;
-
     }
 
     .image01 {
       background: url("img/company__01.jpg") center no-repeat;
-
     }
 
     .image02 {
       background: url("img/company__02.jpg") center no-repeat;
-
     }
 
     .image03 {
       background: url("img/company__03.jpg") center no-repeat;
-
     }
 
     .companies__info {
@@ -260,7 +253,6 @@ header {
 }
 
 main {
-
   margin-left: 20px;
   margin-right: 20px;
 
@@ -274,6 +266,9 @@ main {
       padding-left: 5px;
       color: #1c2534;
       font-size: 30px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .services__add-button {
@@ -284,6 +279,9 @@ main {
       font-size: 14px;
       color: white;
       outline: none;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
 
       &:hover {
         cursor: pointer;
@@ -318,7 +316,6 @@ main {
         padding: 34px;
         border: 1px solid #e0e2e6;
 
-
         &:hover {
           background: #f4f7fb;
           cursor: pointer;
@@ -351,8 +348,10 @@ aside {
       height: 45px;
       padding-top: 5px;
       margin-bottom: 3px;
+
     }
   }
+
   .people__item {
     margin-bottom: 19px;
 
@@ -363,7 +362,6 @@ aside {
     .people__info {
       display: flex;
       justify-content: space-between;
-
 
       .people__photo {
         border-radius: 5px;
@@ -393,6 +391,7 @@ aside {
     .advertisement__image {
       border: 1px solid #e0e2e6;
     }
+
     .advertisement__copyright {
       display: block;
       margin-top: 4px;
@@ -420,7 +419,6 @@ aside {
         display: flex;
         justify-content: space-between;
 
-
         .product__photo {
           width: 80px;
           height: 80px;
@@ -447,5 +445,3 @@ aside {
     }
   }
 }
-
-
